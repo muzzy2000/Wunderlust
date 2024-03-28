@@ -166,21 +166,40 @@
 </main>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-    <section>
-        <form>
-        Contact Us
-        First Name (Enter first name)
-        Last Name (Enter last name)
+    <section> 
+        <h2>Contact Us</h2>
+        <form> 
+            <label for="first-name">First Name</label>
+            <input type="text" name="f-name" id="f-name" placeholder="(Enter first name)">
 
-        Contact Method (Email, Text, Phone)
-        Email Address (Enter Email)
-        Phone Number (Enter telephone number)
+            <label for="last-name">Last Name</label>
+            <input type="text" name="l-name" id="l-name" placeholder="(Enter last name)">
+            
+            <fieldset>
+                <legend>Contact Method</legend>
 
-        Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-        Travel Time (Fall, Winter, Spring, Summer, Flexible)
+                <input type="radio" name="contact-method" id="email-method">
+                <label for="email-method">Email</label>
+
+                <input type="radio" name="contact-method" id="text-method">
+                <label for="email-method">Text</label>
+
+                <input type="radio" name="contact-method" id="phone-method">
+                <label for="email-method">Phone</label>
+            </fieldset>
+
+            <label for="email-address" name="your-email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="(Enter Email)">
+           
+            <label for="tel-number" name="your-num">Phone Number</label>
+            <input type="tel" name="your-num" id="your-num" placeholder="(Enter telephone number)">
+           
+
+            Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
+            Travel Time (Fall, Winter, Spring, Summer, Flexible)
         </form>
     </section>
-    
+
 <footer>
     <p>Copyright 2021 Wunderlust</p>
     <p>Privacy Statement</p>
